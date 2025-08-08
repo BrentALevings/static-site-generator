@@ -11,9 +11,11 @@ dir_path_public = "./docs"
 
 def main():
     try:
-        basepath = sys.argv[0]
+        basepath = sys.argv[1]
     except Exception:
         basepath = "/"
+
+    print(basepath)
 
     print("Deleting public directory...")
     if os.path.exists(dir_path_public):
